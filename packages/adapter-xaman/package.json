@@ -1,0 +1,33 @@
+{
+  "name": "@wavekit-sdk/adapter-xaman",
+  "version": "0.0.1",
+  "description": "Xaman (XUMM) wallet adapter for WaveKit.",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": ["dist", "src"],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@wavekit-sdk/core": "^0.0.1"
+  },
+  "peerDependencies": {
+    "xumm": ">=1.0.0"
+  },
+  "peerDependenciesMeta": {
+    "xumm": { "optional": true }
+  },
+  "keywords": ["xrpl", "xaman", "xumm", "wallet"],
+  "publishConfig": { "access": "public" }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "@wavekit-sdk/react",
+  "version": "0.0.1",
+  "description": "React provider, hooks and ConnectModal UI for WaveKit.",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": ["dist", "src"],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@wavekit-sdk/core": "^0.0.1"
+  },
+  "peerDependencies": {
+    "react": ">=17.0.0",
+    "react-dom": ">=17.0.0"
+  },
+  "keywords": ["xrpl", "wallet", "react", "hooks", "web3"],
+  "publishConfig": { "access": "public" }
+}

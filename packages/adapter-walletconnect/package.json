@@ -1,0 +1,35 @@
+{
+  "name": "@wavekit-sdk/adapter-walletconnect",
+  "version": "0.0.1",
+  "description": "Generic WalletConnect v2 wallet adapter for WaveKit (XRP Ledger).",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": ["dist", "src"],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@wavekit-sdk/core": "^0.0.1"
+  },
+  "peerDependencies": {
+    "@walletconnect/sign-client": ">=2.0.0",
+    "ripple-binary-codec": ">=1.0.0"
+  },
+  "peerDependenciesMeta": {
+    "@walletconnect/sign-client": { "optional": true },
+    "ripple-binary-codec": { "optional": true }
+  },
+  "keywords": ["xrpl", "walletconnect", "wallet", "web3"],
+  "publishConfig": { "access": "public" }
+}

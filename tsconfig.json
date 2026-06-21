@@ -1,0 +1,17 @@
+{
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "noEmit": true,
+    "baseUrl": ".",
+    "paths": {
+      "@wavekit-sdk/core": ["packages/core/src/index.ts"],
+      "@wavekit-sdk/adapter-xaman": ["packages/adapter-xaman/src/index.ts"],
+      "@wavekit-sdk/adapter-tangem": ["packages/adapter-tangem/src/index.ts"],
+      "@wavekit-sdk/adapter-walletconnect": ["packages/adapter-walletconnect/src/index.ts"],
+      "@wavekit-sdk/adapter-ledger": ["packages/adapter-ledger/src/index.ts"],
+      "@wavekit-sdk/adapter-trezor": ["packages/adapter-trezor/src/index.ts"],
+      "@wavekit-sdk/react": ["packages/react/src/index.ts"]
+    }
+  },
+  "include": ["packages/*/src", "packages/*/test", "examples/usage.tsx"]
+}

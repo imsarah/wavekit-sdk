@@ -1,0 +1,12 @@
+{
+  "files": [],
+  "references": [
+    { "path": "packages/core" },
+    { "path": "packages/adapter-xaman" },
+    { "path": "packages/adapter-tangem" },
+    { "path": "packages/adapter-walletconnect" },
+    { "path": "packages/adapter-ledger" },
+    { "path": "packages/adapter-trezor" },
+    { "path": "packages/react" }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "name": "@wavekit-sdk/adapter-trezor",
+  "version": "0.0.1",
+  "description": "Trezor hardware wallet adapter for WaveKit (XRP Ledger).",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": ["dist", "src"],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@wavekit-sdk/core": "^0.0.1"
+  },
+  "peerDependencies": {
+    "@trezor/connect": ">=9.0.0"
+  },
+  "peerDependenciesMeta": {
+    "@trezor/connect": { "optional": true }
+  },
+  "keywords": ["xrpl", "trezor", "hardware-wallet", "wallet"],
+  "publishConfig": { "access": "public" }
+}

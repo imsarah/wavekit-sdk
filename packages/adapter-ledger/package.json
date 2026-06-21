@@ -1,0 +1,37 @@
+{
+  "name": "@wavekit-sdk/adapter-ledger",
+  "version": "0.0.1",
+  "description": "Ledger hardware wallet adapter for WaveKit (XRP Ledger).",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": ["dist", "src"],
+  "sideEffects": false,
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "@wavekit-sdk/core": "^0.0.1"
+  },
+  "peerDependencies": {
+    "@ledgerhq/hw-app-xrp": ">=6.0.0",
+    "@ledgerhq/hw-transport-webhid": ">=6.0.0",
+    "ripple-binary-codec": ">=1.0.0"
+  },
+  "peerDependenciesMeta": {
+    "@ledgerhq/hw-app-xrp": { "optional": true },
+    "@ledgerhq/hw-transport-webhid": { "optional": true },
+    "ripple-binary-codec": { "optional": true }
+  },
+  "keywords": ["xrpl", "ledger", "hardware-wallet", "wallet"],
+  "publishConfig": { "access": "public" }
+}

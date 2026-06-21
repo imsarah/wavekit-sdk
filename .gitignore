@@ -1,0 +1,20 @@
+node_modules/
+dist/
+*.tsbuildinfo
+.tsbuildinfo
+.DS_Store
+*.log
+npm-debug.log*
+.env
+.env.*
+!.env.example
+coverage/
+
+# Generated deliverable artifacts (git bundles, source tarballs)
+*.bundle
+*.tar.gz
+*.tgz
+
+# Next.js
+.next/
+next-env.d.ts
